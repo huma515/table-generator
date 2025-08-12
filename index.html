@@ -12,16 +12,17 @@
     <script>
 
 var userInp = +prompt("Enter a number to generate its table:")
-found = false
 for(var i = 1 ; i <= 10 ; i++){
-    if(userInp<=40 && userInp >= 2)
+    if(userInp<=40){
      document.write('<div style="text-align: center; font-size: 30px; line-height: 2;">');
-    document.write(userInp + " x " + i + " = "+ (userInp*i)+" <br> " )
-      
+    document.write(userInp + " x " + i + " = "+ (userInp*i)+" <br> " ) 
+     }
 }
+      
+
 document.write("</font></center>");
 if(userInp >40){
-    alert("Enter between 2 to 40")
+    alert("Enter between 1 to 40")
 }
 
 
